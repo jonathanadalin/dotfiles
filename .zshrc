@@ -3,8 +3,12 @@ alias vi="nvim"
 alias vim="nvim"
 
 # Prompt
+autoload -Uz vcs_info
+precmd() { vcs_info }
+zstyle ':vcs_info:git:*' formats '%F{magenta}%b%F{reset}'
 autoload -U colors && colors
-export PS1='%F{cyan}[%D{%T}]%F{reset} %F{blue}%~%F{reset} 
+setopt PROMPT_SUBST
+PROMPT='%F{cyan}[%D{%T}]%F{reset} %F{blue}%~%F{reset} ${vcs_info_msg_0_} 
 %F{yellow}$%F{reset} '
 
 # Neovim
