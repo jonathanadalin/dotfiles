@@ -1,10 +1,30 @@
 {
-    "workbench.colorTheme": "Default Dark Modern",
-    "window.zoomLevel": 1,
     "editor.renderWhitespace": "all",
     "editor.tabSize": 2,
+    "editor.tokenColorCustomizations": {
+        "[Gruvbox Dark Hard]": {
+            "textMateRules": [
+                {
+                    "name": "string",
+                    "scope": "string",
+                    "settings": {
+                        "foreground": "#ebdbb2",
+                    }
+                },
+                {
+                    "name": "",
+                    "scope": "support.class.ruby",
+                    "settings": {
+                        "foreground": "#83a598",
+                    }
+                }
+            ]
+        }
+    },
     "editor.minimap.autohide": true,
     "files.autoSave": "onFocusChange",
-    "workbench.iconTheme": "vscode-icons",
-    "ruby.intellisense": "rubyLocate"
+    "ruby.intellisense": "rubyLocate",
+    "window.zoomLevel": 1,
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.iconTheme": "vscode-icons"
 }
